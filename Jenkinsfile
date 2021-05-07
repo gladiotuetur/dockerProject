@@ -20,6 +20,8 @@ pipeline {
 
         steps {
             sh """
+            sudo systemctl status docker
+	    sudo systemctl start docker
             ls
             docker-compose up -d
             """
