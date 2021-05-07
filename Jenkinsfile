@@ -6,7 +6,7 @@ pipeline {
     tools {
             maven 'myMaven'
             jdk 'myJDK'
-	    docker 'myDocker'
+	    dockerTool 'myDocker'
     }
     stages {
     stage ('Check out the code') {
