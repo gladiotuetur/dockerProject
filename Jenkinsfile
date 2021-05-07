@@ -20,6 +20,7 @@ pipeline {
 
         steps {
             sh """
+            ls
             docker-compose up -d
             """
         }
